@@ -1,0 +1,36 @@
+body {
+    font-family: 'Bitter', serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+legend {
+    font-size: 1.2em;
+    color: #00008B;
+
+}
+
+button:hover,
+button:focus {
+  outline   : none;
+  background: #000000;
+  color   : #ffffff;
+}
+
+button, input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+}
+
+textarea
+ {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1em;
+    background:lightblue;
+    min-width: 100%;
+}
+
+
+

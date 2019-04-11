@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+6<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,287 +6,134 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/nav-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
 </head>
 
 <body>
-    <!-- skip link -->
-    <a href="#main" class="skip">Skip to main</a>
-    <!-- start of header -->
-    <header id="header" class="header">
-        <nav class="navbar">
-            <span class="navbar-toggle" id="js-navbar-toggle">
-                <i id="symbol-toggle" class="fas fa-bars"></i>
-            </span>
-            <a href="#header" class="logo">
-                <div class="logo-container">
-                    <img class="logo" src="images/logo-1913689.svg" alt="Company Logo">
-                    <h1 class="page-title">Web Dev I</h1>
-                </div>
-            </a>
-            <ul class="main-nav" id="js-menu">
-                <li>
-                    <a href="#main" class="nav-links">Main</a>
-                </li>
-                <li>
-                    <a href="#about-me" class="nav-links">About Me</a>
-                </li>
-                <li>
-                    <a href="#pictures" class="nav-links">My Photos</a>
-                </li>
-                <li>
-                    <a href="#story" class="nav-links">A Story</a>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-links">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- end of header -->
-    <!-- start of main content -->
-    <!--    why put tabindex of -1 on skiplink target -  https://axesslab.com/skip-links/ -->
-    <main id="main" tabindex="-1" class="main">
-        <!-- start of bio section -->
+    <main class="main">
+        <header class="header">
+            <div class="content">
+                <img class="logo main-col" src="images/logo-1913689.svg" alt="Company Logo">
+                <div class="page-title">Web Dev I</div>
+            </div>
+        </header>
         <section class="hero">
             <div class="content">
                 <picture>
-                    <source media="(min-width: 1024px)" srcset="images/lk-lrg.jpg">
-                    <source media="(min-width: 960px)" srcset="images/lk-med.jpg">
-                    <source media="(min-width: 640px)" srcset="images/lk-small.jpg">
-                    <img class="profile" src="images/lk-xsmall.jpg" alt="This is a picture of me">
+                    <source media="(min-width: 1024px)" srcset="images/21-large.jpg">
+                    <source media="(min-width: 960px)" srcset="images/21-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/21-small.jpg">
+                    <img class="my-picture" src="images/21-xsmall.jpg" alt="This is a picture of me">
                 </picture>
-                <p class="my-name">Lyan Kent</p>
-                <p class="my-location">Branchburg, NJ</p>
+                <p class="my-name">Robert Brundage</p>
+                <p class="my-location">Washington, NJ</p>
             </div>
         </section>
-        <section id="about-me" class="about-me">
+        <section class="about-me">
             <div class="content">
                 <div class="about-content">
                     <p class="iama">I want to be...</p>
-                    <p class="my-info">a web developer master!</p>
+                    <p class="my-info">successful in classes</p>
                     <p class="iama">My favorite way to work is...</p>
-                    <p class="my-info">late at night with large headphones and lots of coffee.</p>
+                    <p class="my-info">in the morning with music playing.</p>
                     <p class="iama">In my free time, I like to...</p>
-                    <p class="my-info">run through the park, read sci-fi novels, and redesign my personal site using
-                        whatever new tech I want to learn.</p>
+                    <p class="my-info">Play a game, watch a movie, hangout with friends or workout.</p>
                 </div>
             </div>
         </section>
-        <!-- end of bio section -->
-        <div class="back-to-top">
-            <a href="#">Back to Top</a>
-        </div>
-        <!-- start of photo gallery -->
-        <section id="pictures" class="gallery">
-            <h1 class="gallery-title">My Abstract Photo Gallery</h1>
-            <figure class="fig1">
+        <section>
+            <figure>
                 <picture>
-                    <source media="(min-width: 1024px)" srcset="images/fickle-1a-lrg.jpg">
-                    <source media="(min-width: 960px)" srcset="images/fickle-1a-med.jpg">
-                    <source media="(min-width: 640px)" srcset="images/fickle-1a-small.jpg">
-                    <img src="images/fickle-1a-xsmall.jpg" alt="an abstract photo">
+                    <source media="(min-width: 1024px)" srcset="images/stream-large.jpg">
+                    <source media="(min-width: 960px)" srcset="images/stream-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/stream-small.jpg">
+                    <img class="pix" src="images/stream-xsmall.jpg" alt="stream">
                 </picture>
-                <figcaption>Abstract Photo - Fickle Stream 1</figcaption>
+
+                <figcaption>A stream in PA</figcaption>
             </figure>
             <hr>
-            <figure class="fig2">
+            <figure>
                 <picture>
-                    <source media="(min-width: 1024px)" srcset="images/fickle-5-lrg.jpg">
-                    <source media="(min-width: 960px)" srcset="images/fickle-5-med.jpg">
-                    <source media="(min-width: 640px)" srcset="images/fickle-5-small.jpg">
-                    <img src="images/fickle-5-xsmall.jpg" alt="an abstract photo">
+                    <source media="(min-width: 1024px)" srcset="images/wheel-large.jpg">
+                    <source media="(min-width: 960px)" srcset="images/wheel-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/wheel-small.jpg">
+                    <img class="pix" src="images/wheel-xsmall.jpg" alt="Ferris Wheel">
                 </picture>
-                <figcaption>Abstract Photo - Fickle Stream 5</figcaption>
+                <figcaption>A colorful Ferris wheel at knoebels PA</figcaption>
             </figure>
             <hr>
-            <figure class="fig3">
+            <figure>
                 <picture>
-                    <source media="(min-width: 1024px)" srcset="images/fickle-6-lrg.jpg">
-                    <source media="(min-width: 960px)" srcset="images/fickle-6-med.jpg">
-                    <source media="(min-width: 640px)" srcset="images/fickle-6-small.jpg">
-                    <img src="images/fickle-6-xsmall.jpg" alt="an abstract photo">
+                    <source media="(min-width: 1024px)" srcset="images/dragon-large.jpg">
+                    <source media="(min-width: 960px)" srcset="images/dragon-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/dragon-small.jpg">
+                    <img class="pix" src="images/dragon-xsmall.jpg" alt="Dragon">
                 </picture>
-                <figcaption>Abstract Photo - Fickle Stream 6</figcaption>
+                <figcaption>Diagon Alley Universal Orlando</figcaption>
             </figure>
         </section>
-        <!-- end of photo gallery -->
-        <div class="back-to-top">
-            <a href="#">Back to Top</a>
-        </div>
-        <hr class="mobile-first">
-        <!-- start of Sherlock Holmes story -->
-        <article id="story" class="story">
-            <h1>Sherlock Holmes</h1>
-            <p>I was very angry, for this was the third demand during the month. 'You shall not have a farthing from
-                me,' I cried, on which he bowed and left the room without another word.</p>
+        <article>
+            <h1>The Life of Samuel Johnson</h1>
+            <p>I complained that he had not mentioned Garrick in his Preface to Shakspeare; and asked him if he did not admire him. JOHNSON. 'Yes, as "a poor player, who frets and struts his hour upon the stage;"--as a shadow.' BOSWELL. 'But has he not brought Shakspeare into notice?' JOHNSON. 'Sir, to allow that, would be to lampoon the age. Many of Shakspeare's plays are the worse for being acted: Macbeth, for instance.' BOSWELL. 'What, Sir, is nothing gained by decoration and action? Indeed, I do wish that you had mentioned Garrick.' JOHNSON. 'My dear Sir, had I mentioned him, I must have mentioned many more: Mrs. Pritchard, Mrs. Cibber,--nay, and Mr. Cibber too; he too altered Shakspeare.' BOSWELL. 'You have read his apology, Sir?' JOHNSON. 'Yes, it is very entertaining. But as for Cibber himself, taking from his conversation all that he ought not to have said, he was a poor creature. I remember when he brought me one of his Odes to have my opinion of it; I could not bear such nonsense, and would not let him read it to the end; so little respect had I for THAT GREAT MAN! (laughing.) Yet I remember Richardson wondering that I could treat him with familiarity.'</p>
 
-            <p>When he was gone I unlocked my bureau, made sure that my treasure was safe, and locked it again. Then I
-                started to go round the house to see that all was secure--a duty which I usually leave to Mary but which
-                I thought it well to perform myself that night. As I came down the stairs I saw Mary herself at the side
-                window of the hall, which she closed and fastened as I approached.</p>
+            <p>I mentioned to him that I had seen the execution of several convicts at Tyburn, two days before, and that none of them seemed to be under any concern. JOHNSON. 'Most of them, Sir, have never thought at all.' BOSWELL. 'But is not the fear of death natural to man?' JOHNSON. 'So much so, Sir, that the whole of life is but keeping away the thoughts of it.' He then, in a low and earnest tone, talked of his meditating upon the aweful hour of his own dissolution, and in what manner he should conduct himself upon that occasion: 'I know not (said he,) whether I should wish to have a friend by me, or have it all between GOD and myself.'</p>
 
-            <p>'Tell me, dad,' said she, looking, I thought, a little disturbed, 'did you give Lucy, the maid, leave to
-                go out to-night?'</p>
+            <p>Talking of our feeling for the distresses of others;--JOHNSON. 'Why, Sir, there is much noise made about it, but it is greatly exaggerated. No, Sir, we have a certain degree of feeling to prompt us to do good: more than that, Providence does not intend. It would be misery to no purpose.' BOSWELL. 'But suppose now, Sir, that one of your intimate friends were apprehended for an offence for which he might be hanged.' JOHNSON. 'I should do what I could to bail him, and give him any other assistance; but if he were once fairly hanged, I should not suffer.' BOSWELL. 'Would you eat your dinner that day, Sir?' JOHNSON. 'Yes, Sir; and eat it as if he were eating it with me. Why, there's Baretti, who is to be tried for his life to-morrow, friends have risen up for him on every side; yet if he should be hanged, none of them will eat a slice of plumb-pudding the less. Sir, that sympathetic feeling goes a very little way in depressing the mind.'</p>
 
-            <p>'Certainly not.'</p>
+            <p>I told him that I had dined lately at Foote's, who shewed me a letter which he had received from Tom Davies, telling him that he had not been able to sleep from the concern which he felt on account of 'This sad affair of Baretti,' begging of him to try if he could suggest any thing that might be of service; and, at the same time, recommending to him an industrious young man who kept a pickle-shop. JOHNSON. 'Ay, Sir, here you have a specimen of human sympathy; a friend hanged, and a cucumber pickled. We know not whether Baretti or the pickle-man has kept Davies from sleep; nor does he know himself. And as to his not sleeping, Sir; Tom Davies is a very great man; Tom has been upon the stage, and knows how to do those things. I have not been upon the stage, and cannot do those things.' BOSWELL. 'I have often blamed myself, Sir, for not feeling for others as sensibly as many say they do.' JOHNSON. 'Sir, don't be duped by them any more. You will find these very feeling people are not very ready to do you good. They PAY you by FEELING.'</p>
 
-            <p>'She came in just now by the back door. I have no doubt that she has only been to the side gate to see
-                someone, but I think that it is hardly safe and should be stopped.'</p>
+            <p>BOSWELL. 'Foote has a great deal of humour?' JOHNSON. 'Yes, Sir.' BOSWELL. 'He has a singular talent of exhibiting character.' JOHNSON. 'Sir, it is not a talent; it is a vice; it is what others abstain from. It is not comedy, which exhibits the character of a species, as that of a miser gathered from many misers: it is farce, which exhibits individuals.' BOSWELL. 'Did not he think of exhibiting you, Sir?' JOHNSON. 'Sir, fear restrained him; he knew I would have broken his bones. I would have saved him the trouble of cutting off a leg; I would not have left him a leg to cut off.' BOSWELL. 'Pray, Sir, is not Foote an infidel?' JOHNSON. 'I do not know, Sir, that the fellow is an infidel; but if he be an infidel, he is an infidel as a dog is an infidel; that is to say, he has never thought upon the subject.' BOSWELL. 'I suppose, Sir, he has thought superficially, and seized the first notions which occurred to his mind.' JOHNSON. 'Why then, Sir, still he is like a dog, that snatches the piece next him. Did you never observe that dogs have not the power of comparing? A dog will take a small bit of meat as readily as a large, when both are before him.'</p>
 
-            <p>'You must speak to her in the morning, or I will if you prefer it. Are you sure that everything is
-                fastened?'</p>
+            <p>BOSWELL. 'What do you think of Dr. Young's Night Thoughts, Sir?' JOHNSON. 'Why, Sir, there are very fine things in them.' BOSWELL. 'Is there not less religion in the nation now, Sir, than there was formerly?' JOHNSON. 'I don't know, Sir, that there is.' BOSWELL. 'For instance, there used to be a chaplain in every great family, which we do not find now.' JOHNSON. 'Neither do you find any of the state servants, which great families used formerly to have. There is a change of modes in the whole department of life.'</p>
 
-            <p>'Quite sure, dad.'</p>
+            <p>Next day, October 20, he appeared, for the only time I suppose in his life, as a witness in a Court of Justice, being called to give evidence to the character of Mr. Baretti, who having stabbed a man in the street, was arraigned at the Old Bailey for murder. Never did such a constellation of genius enlighten the aweful Sessions-House, emphatically called JUSTICE HALL; Mr. Burke, Mr. Garrick, Mr. Beauclerk, and Dr. Johnson: and undoubtedly their favourable testimony had due weight with the Court and Jury. Johnson gave his evidence in a slow, deliberate, and distinct manner, which was uncommonly impressive. It is well known that Mr. Baretti was acquitted.</p>
 
-            <p>'Then, good-night.' I kissed her and went up to my bedroom again, where I was soon asleep.</p>
-
-            <p>I am endeavouring to tell you everything, Mr. Holmes, which may have any bearing upon the case, but I beg
-                that you will question me upon any point which I do not make clear."</p>
-
-            <p>On the contrary, your statement is singularly lucid."</p>
-
-            <p>I come to a part of my story now in which I should wish to be particularly so. I am not a very heavy
-                sleeper, and the anxiety in my mind tended, no doubt, to make me even less so than usual. About two in
-                the morning, then, I was awakened by some sound in the house. It had ceased ere I was wide awake, but it
-                had left an impression behind it as though a window had gently closed somewhere. I lay listening with
-                all my ears. Suddenly, to my horror, there was a distinct sound of footsteps moving softly in the next
-                room. I slipped out of bed, all palpitating with fear, and peeped round the corner of my dressing-room
-                door.</p>
-
-            <p>'Arthur!' I screamed, 'you villain! you thief! How dare you touch that coronet?'</p>
-
-            <p>The gas was half up, as I had left it, and my unhappy boy, dressed only in his shirt and trousers, was
-                standing beside the light, holding the coronet in his hands. He appeared to be wrenching at it, or
-                bending it with all his strength. At my cry he dropped it from his grasp and turned as pale as death. I
-                snatched it up and examined it. One of the gold corners, with three of the beryls in it, was missing.
-            </p>
-
-            <p>'You blackguard!' I shouted, beside myself with rage. 'You have destroyed it! You have dishonoured me
-                forever! Where are the jewels which you have stolen?'</p>
-
-            <p>'Stolen!' he cried.</p>
-
-            <p>'Yes, thief!' I roared, shaking him by the shoulder.</p>
-
-            <p>'There are none missing. There cannot be any missing,' said he.</p>
-
-            <p>'There are three missing. And you know where they are. Must I call you a liar as well as a thief? Did I
-                not see you trying to tear off another piece?'</p>
-
-            <p>'You have called me names enough,' said he, 'I will not stand it any longer. I shall not say another word
-                about this business, since you have chosen to insult me. I will leave your house in the morning and make
-                my own way in the world.'</p>
-
-            <p>'You shall leave it in the hands of the police!' I cried half-mad with grief and rage. 'I shall have this
-                matter probed to the bottom.'</p>
-
-            <p>'You shall learn nothing from me,' said he with a passion such as I should not have thought was in his
-                nature. 'If you choose to call the police, let the police find what they can.'</p>
-
-            <p>By this time the whole house was astir, for I had raised my voice in my anger. Mary was the first to rush
-                into my room, and, at the sight of the coronet and of Arthur's face, she read the whole story and, with
-                a scream, fell down senseless on the ground. I sent the house-maid for the police and put the
-                investigation into their hands at once. When the inspector and a constable entered the house, Arthur,
-                who had stood sullenly with his arms folded, asked me whether it was my intention to charge him with
-                theft. I answered that it had ceased to be a private matter, but had become a public one, since the
-                ruined coronet was national property. I was determined that the law should have its way in everything.
-            </p>
-
-            <p>'At least,' said he, 'you will not have me arrested at once. It would be to your advantage as well as
-                mine if I might leave the house for five minutes.'</p>
-
-            <p>'That you may get away, or perhaps that you may conceal what you have stolen,' said I. And then,
-                realising the dreadful position in which I was placed, I implored him to remember that not only my
-                honour but that of one who was far greater than I was at stake; and that he threatened to raise a
-                scandal which would convulse the nation. He might avert it all if he would but tell me what he had done
-                with the three missing stones.</p>
-
-            <p>'You may as well face the matter,' said I; 'you have been caught in the act, and no confession could make
-                your guilt more heinous. If you but make such reparation as is in your power, by telling us where the
-                beryls are, all shall be forgiven and forgotten.'</p>
-
-            <p>'Keep your forgiveness for those who ask for it,' he answered, turning away from me with a sneer. I saw
-                that he was too hardened for any words of mine to influence him. There was but one way for it. I called
-                in the inspector and gave him into custody. A search was made at once not only of his person but of his
-                room and of every portion of the house where he could possibly have concealed the gems; but no trace of
-                them could be found, nor would the wretched boy open his mouth for all our persuasions and our threats.
-                This morning he was removed to a cell, and I, after going through all the police formalities, have
-                hurried round to you to implore you to use your skill in unravelling the matter. The police have openly
-                confessed that they can at present make nothing of it. You may go to any expense which you think
-                necessary. I have already offered a reward of 1000 pounds. My God, what shall I do! I have lost my
-                honour, my gems, and my son in one night. Oh, what shall I do!"</p>
-
-            <p>He put a hand on either side of his head and rocked himself to and fro, droning to himself like a child
-                whose grief has got beyond words.</p>
-
-            <p>Sherlock Holmes sat silent for some few minutes, with his brows knitted and his eyes fixed upon the fire.
-            </p>
-
-            <p>Do you receive much company?" he asked.</p>
-
-            <p>None save my partner with his family and an occasional friend of Arthur's. Sir George Burnwell has been
-                several times lately. No one else, I think."</p>
-
-            <p>Do you go out much in society?"</p>
+            <p>On the 26th of October, we dined together at the Mitre tavern. I found fault with Foote for indulging his talent of ridicule at the expence of his visitors, which I colloquially termed making fools of his company. JOHNSON. 'Why, Sir, when you go to see Foote, you do not go to see a saint: you go to see a man who will be entertained at your house, and then bring you on a publick stage; who will entertain you at his house, for the very purpose of bringing you on a publick stage. Sir, he does not make fools of his company; they whom he exposes are fools already: he only brings them into action.'</p>
         </article>
-        <!-- end of Sherlock Holmes story -->
+
+        <section id="contact" class="form-container">
+            <h1>Get in touch</h1>
+            <div>
+
+                <section>
+                    <form method="POST" action="https://formspree.io/rbmets5@gmail.com">
+                        <fieldset>
+                            <legend>Please feel free to contact me</legend>
+
+                            <label for="email">please enter your email address</label>
+                            <br>
+                            <input type="email" id="email" name="email">
+                            <p></p>
+                            <fieldset>
+                                <legend>I would like a reply</legend>
+                                <input type="radio" name="yes_no" checked>Yes
+                                <br>
+                                <br>
+                                <input type="radio" name="yes_no">No
+
+                            </fieldset>
+                            <br>
+
+                            <label for="message">Leave your message below</label>
+                            <br>
+                            <textarea name="message" id="message"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit">Send Message</button>
+                        </fieldset>
+                    </form>
+                </section>
+
+            </div>
+        </section>
+                <footer class="footer">
+                    <div class="content">
+                        <p class="copyright">This is my website &copy; 2019</p>
+                    </div>
+                </footer>
     </main>
-    <!-- end of main content -->
-    <div class="back-to-top">
-        <a href="#">Back to Top</a>
-    </div>
-    <hr class="mobile-first">
-    <!-- start of contact form -->
-    <section id="contact" class="form-container">
-        <h1>Get in Touch</h1>
-        <br class="mobile-first"><br class="mobile-first">
-        <div>
-            <form>
-                <fieldset>
-                    <legend>&nbsp;&nbsp; F O R M &nbsp;G O E S &nbsp; H E R E&nbsp;&nbsp;</legend>
-                    <br class="mobile-first"><br class="mobile-first">
-                    <p>
-                        &nbsp;L E F T&nbsp;&nbsp;E M P T Y&nbsp;&nbsp;O N&nbsp;&nbsp;P U R P O S E&nbsp;
-                    </p>
-                    <br class="mobile-first"><br class="mobile-first">
-                </fieldset>
-            </form>
-        </div>
-    </section>
-    <!-- end of contact form -->
-    <!-- start of footer -->
-    <footer>
-        <br class="mobile-first"><br class="mobile-first">
-        <p> &copy; 2019 Lyan Kent</p>
-    </footer>
-    <div class="back-to-top">
-        <a href="#">Back to Top</a>
-    </div>
-    <!-- end of footer -->
-    <br class="mobile-first"><br class="mobile-first">
-    <!-- start of javascript for nav toggle -->
-    <script>
-        let mainNav = document.getElementById('js-menu');
-        let navBarToggle = document.getElementById('js-navbar-toggle');
-        let symbolToggle = document.getElementById('symbol-toggle');
-
-
-        navBarToggle.addEventListener('click', function () {
-            mainNav.classList.toggle('active');
-            if (symbolToggle.classList.contains('fa-bars')) {
-                symbolToggle.classList.remove('fa-bars');
-                symbolToggle.classList.add('fa-times');
-            } else {
-                symbolToggle.classList.remove('fa-times');
-                symbolToggle.classList.add('fa-bars');
-            }
-        });
-    </script>
-    <!-- end of javascript for nav toggle -->
-</body>
-
+	</body>
 </html>
