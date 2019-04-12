@@ -32,5 +32,10 @@ textarea
     min-width: 100%;
 }
 
+.navbar {
+    background-color: #333;
+    padding-bottom: 1rem;
+}
+
 
 

@@ -1,4 +1,4 @@
-6<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,18 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <main class="main">
-        <header class="header">
-            <div class="content">
-                <img class="logo main-col" src="images/logo-1913689.svg" alt="Company Logo">
-                <div class="page-title">Web Dev I</div>
-            </div>
-        </header>
+    <!-- skip link -->
+    <a href="#main" class="skip">Skip to main</a>
+    <!-- start of header -->
+    <header id="header" class="header">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i id="symbol-toggle" class="fas fa-bars"></i>
+            </span>
+            <a href="#header" class="logo">
+                <div class="logo-container">
+                    <img class="logo" src="images/logo-1913689.svg" alt="Company Logo">
+                    <h1 class="page-title">Web Dev I</h1>
+                </div>
+            </a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="#main" class="nav-links">Main</a>
+                </li>
+                <li>
+                    <a href="#about-me" class="nav-links">About Me</a>
+                </li>
+                <li>
+                    <a href="#pictures" class="nav-links">My Photos</a>
+                </li>
+                <li>
+                    <a href="#story" class="nav-links">A Story</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-links">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end of header -->
+    <!-- start of main content -->
+    <!--    why put tabindex of -1 on skiplink target -  https://axesslab.com/skip-links/ -->
+    <main id="main" tabindex="-1" class="main">
+        <!-- start of bio section -->
         <section class="hero">
             <div class="content">
                 <picture>
@@ -31,17 +64,18 @@
                 <p class="my-location">Washington, NJ</p>
             </div>
         </section>
-        <section class="about-me">
+        <section id="about-me" class="about-me">
             <div class="content">
                 <div class="about-content">
-                    <p class="iama">I want to be...</p>
-                    <p class="my-info">successful in classes</p>
-                    <p class="iama">My favorite way to work is...</p>
-                    <p class="my-info">in the morning with music playing.</p>
-                    <p class="iama">In my free time, I like to...</p>
-                    <p class="my-info">Play a game, watch a movie, hangout with friends or workout.</p>
                 </div>
             </div>
+        </section>
+        <!-- end of bio section -->
+        <div class="back-to-top">
+            <a href="#">Back to Top</a>
+        </div>
+        <!-- start of photo gallery -->
+        <section id="pictures" class="gallery">
         </section>
         <section>
             <figure>
@@ -75,7 +109,13 @@
                 <figcaption>Diagon Alley Universal Orlando</figcaption>
             </figure>
         </section>
-        <article>
+        <!-- end of photo gallery -->
+        <div class="back-to-top">
+            <a href="#">Back to Top</a>
+        </div>
+        <hr class="mobile-first">
+        <!-- start of Sherlock Holmes story -->
+        <article id="story" class="story">
             <h1>The Life of Samuel Johnson</h1>
             <p>I complained that he had not mentioned Garrick in his Preface to Shakspeare; and asked him if he did not admire him. JOHNSON. 'Yes, as "a poor player, who frets and struts his hour upon the stage;"--as a shadow.' BOSWELL. 'But has he not brought Shakspeare into notice?' JOHNSON. 'Sir, to allow that, would be to lampoon the age. Many of Shakspeare's plays are the worse for being acted: Macbeth, for instance.' BOSWELL. 'What, Sir, is nothing gained by decoration and action? Indeed, I do wish that you had mentioned Garrick.' JOHNSON. 'My dear Sir, had I mentioned him, I must have mentioned many more: Mrs. Pritchard, Mrs. Cibber,--nay, and Mr. Cibber too; he too altered Shakspeare.' BOSWELL. 'You have read his apology, Sir?' JOHNSON. 'Yes, it is very entertaining. But as for Cibber himself, taking from his conversation all that he ought not to have said, he was a poor creature. I remember when he brought me one of his Odes to have my opinion of it; I could not bear such nonsense, and would not let him read it to the end; so little respect had I for THAT GREAT MAN! (laughing.) Yet I remember Richardson wondering that I could treat him with familiarity.'</p>
 
@@ -93,47 +133,77 @@
 
             <p>On the 26th of October, we dined together at the Mitre tavern. I found fault with Foote for indulging his talent of ridicule at the expence of his visitors, which I colloquially termed making fools of his company. JOHNSON. 'Why, Sir, when you go to see Foote, you do not go to see a saint: you go to see a man who will be entertained at your house, and then bring you on a publick stage; who will entertain you at his house, for the very purpose of bringing you on a publick stage. Sir, he does not make fools of his company; they whom he exposes are fools already: he only brings them into action.'</p>
         </article>
-
-        <section id="contact" class="form-container">
-            <h1>Get in touch</h1>
-            <div>
-
-                <section>
-                    <form method="POST" action="https://formspree.io/rbmets5@gmail.com">
-                        <fieldset>
-                            <legend>Please feel free to contact me</legend>
-
-                            <label for="email">please enter your email address</label>
-                            <br>
-                            <input type="email" id="email" name="email">
-                            <p></p>
-                            <fieldset>
-                                <legend>I would like a reply</legend>
-                                <input type="radio" name="yes_no" checked>Yes
-                                <br>
-                                <br>
-                                <input type="radio" name="yes_no">No
-
-                            </fieldset>
-                            <br>
-
-                            <label for="message">Leave your message below</label>
-                            <br>
-                            <textarea name="message" id="message"></textarea>
-                            <br>
-                            <br>
-                            <button type="submit">Send Message</button>
-                        </fieldset>
-                    </form>
-                </section>
-
-            </div>
-        </section>
-                <footer class="footer">
-                    <div class="content">
-                        <p class="copyright">This is my website &copy; 2019</p>
-                    </div>
-                </footer>
+        <!-- end of Sherlock Holmes story -->
     </main>
-	</body>
+    <!-- end of main content -->
+    <div class="back-to-top">
+        <a href="#">Back to Top</a>
+    </div>
+    <hr class="mobile-first">
+    <section id="contact" class="form-container">
+        <h1>Get in Touch</h1>
+        <br class="mobile-first"><br class="mobile-first">
+        <form method="POST" action="https://formspree.io/rbmets5@gmail.com">
+            <fieldset>
+                <legend>Please feel free to contact me</legend>
+
+                <label for="email">please enter your email address</label>
+                <br>
+                <input type="email" id="email" name="email">
+                <p></p>
+                <fieldset>
+                    <legend>I would like a reply</legend>
+                    <input type="radio" name="yes_no" checked>Yes
+                    <br>
+                    <br>
+                    <input type="radio" name="yes_no">No
+
+                </fieldset>
+                <br>
+
+                <label for="message">Leave your message below</label>
+                <br>
+                <textarea name="message" id="message"></textarea>
+                <br>
+                <br>
+                <button type="submit">Send Message</button>
+            </fieldset>
+        </form>
+
+    </section>
+    <!-- end of contact form -->
+    <!-- start of footer -->
+    <footer>
+        <br class="mobile-first"><br class="mobile-first">
+        <div class="content">
+            <p class="copyright">This is my website &copy; 2019</p>
+        </div>
+    </footer>
+    <div class="back-to-top">
+        <a href="#">Back to Top</a>
+    </div>
+    <!-- end of footer -->
+    <br class="mobile-first"><br class="mobile-first">
+    <!-- start of javascript for nav toggle -->
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+        let symbolToggle = document.getElementById('symbol-toggle');
+
+
+        navBarToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            if (symbolToggle.classList.contains('fa-bars')) {
+                symbolToggle.classList.remove('fa-bars');
+                symbolToggle.classList.add('fa-times');
+            } else {
+                symbolToggle.classList.remove('fa-times');
+                symbolToggle.classList.add('fa-bars');
+            }
+        });
+
+    </script>
+    <!-- end of javascript for nav toggle -->
+</body>
+
 </html>
